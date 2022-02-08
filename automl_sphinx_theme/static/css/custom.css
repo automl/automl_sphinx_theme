@@ -54,7 +54,7 @@ p.sphx-glr-signature, p.sphx-glr-timing, .sphx-glr-download, .sphx-glr-download-
 
 .sphx-glr-thumbcontainer {
     margin: 1px 0 !important;
-    background-color: grey;
+    background-color: gray;
     min-height: auto !important;
     padding: 0 !important;
     width: 100% !important;
@@ -134,4 +134,31 @@ p.sphx-glr-signature, p.sphx-glr-timing, .sphx-glr-download, .sphx-glr-download-
 
 dt:target, span.highlighted {
     background-color: #ffff0020;
+}
+
+
+
+/* API DOC */
+
+p.rubric {
+    margin: 2rem 0 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+table.autosummary {
+    margin-top: -1rem;
+}
+
+table.autosummary td, table.autosummary th {
+    border: 0px;
+    border-bottom: 1px solid rgba(220, 220, 220, 1.0);
+}
+
+dl.py {
+    margin-top: 2rem;
+}
+
+dl.field-list > dt {
+    padding-left: 0;
 }
