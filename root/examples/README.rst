@@ -1,4 +1,0 @@
-Examples
---------
-
-Lorem Ipsum
