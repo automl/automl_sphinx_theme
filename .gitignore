@@ -9,3 +9,4 @@ docs/examples
 docs/build
 docs/html
 __pycache__
+*.tar.gz
