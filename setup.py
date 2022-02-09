@@ -1,6 +1,6 @@
 import os
 from io import open
-from automl_sphinx_theme import __version__
+from automl_sphinx_theme.__version__ import version
 from setuptools import setup
 
 
@@ -32,7 +32,7 @@ def package_files(directory: str):
 
 setup(
     name="automl_sphinx_theme",
-    version=__version__,
+    version=version,
     url="https://github.com/automl/automl_sphinx_theme",
     license="MIT",
     author="René Sass and Edward Bergman",
