@@ -1,6 +1,5 @@
 import os
 from automl_sphinx_theme.conf import OPTIONS
-from automl_sphinx_theme.translator import BootstrapHTML5Translator
 from automl_sphinx_theme.layout import (
     update_config,
     setup_edit_url,
@@ -44,6 +43,8 @@ def setup(app):
     # Read the Docs uses ``readthedocs`` as the name of the build, and also
     # uses a special "dirhtml" builder so we need to replace these both with
     # our custom HTML builder
+    from automl_sphinx_theme.translator import BootstrapHTML5Translator
+
     app.set_translator("html", BootstrapHTML5Translator)
     app.set_translator("readthedocs", BootstrapHTML5Translator, override=True)
     app.set_translator("readthedocsdirhtml", BootstrapHTML5Translator, override=True)
