@@ -1,4 +1,6 @@
 
+PIP := pip
+PYTHON := python
 DIR := ${CURDIR}
 DOCS_DIR = docs
 DIST := ${CURDIR}/dist
