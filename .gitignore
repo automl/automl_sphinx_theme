@@ -1,0 +1,19 @@
+# setup.py
+build
+dist
+*.egg*
+
+# Python
+*.pyc
+*.pyo
+
+# IDEs
+.idea
+
+# Other
+.tox
+*~
+
+#eclipse files
+.pydevproject 
+.project
