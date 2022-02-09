@@ -1,11 +1,5 @@
 import os
 from automl_sphinx_theme.conf import OPTIONS
-from automl_sphinx_theme.layout import (
-    update_config,
-    setup_edit_url,
-    add_toctree_functions,
-    update_templates,
-)
 
 
 def get_html_theme_path():
@@ -46,6 +40,13 @@ def setup(app):
     app.set_translator("html", BootstrapHTML5Translator)
     app.set_translator("readthedocs", BootstrapHTML5Translator, override=True)
     app.set_translator("readthedocsdirhtml", BootstrapHTML5Translator, override=True)
+
+    from automl_sphinx_theme.layout import (
+        update_config,
+        setup_edit_url,
+        add_toctree_functions,
+        update_templates,
+    )
 
     app.connect("env-updated", update_config)
     app.connect("html-page-context", setup_edit_url)
