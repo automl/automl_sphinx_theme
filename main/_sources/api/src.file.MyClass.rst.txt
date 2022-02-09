@@ -1,0 +1,30 @@
+src.file.MyClass
+================
+
+.. automodule:: src.file.MyClass
+  
+   
+      
+         .. rubric:: Module Attributes
+
+         .. autosummary::
+            :toctree:
+         
+            spaghettihoops
+      
+   
+
+   
+      
+   
+
+   
+      
+   
+
+   
+      
+   
+
+
+   
