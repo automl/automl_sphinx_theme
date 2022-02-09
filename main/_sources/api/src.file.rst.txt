@@ -1,0 +1,31 @@
+﻿src.file
+========
+
+.. automodule:: src.file
+  
+   
+      
+   
+
+   
+      
+   
+
+   
+      
+      .. rubric:: Classes
+
+      .. autosummary::
+         :toctree:
+         :template: custom-template.rst
+      
+         MyClass
+      
+   
+
+   
+      
+   
+
+
+   
