@@ -2,15 +2,15 @@
 PIP := pip
 PYTHON := python
 DIR := "${CURDIR}"
-DOCS_DIR = docs
 DIST := "${CURDIR}/dist"
+DOCS_DIR = "${CURDIR}/docs"
 
 .PHONY: clean build publish
 
 clean:
 	$(MAKE) -C ${DOCS_DIR} clean
 	$(PYTHON) setup.py clean
-	rm -rf "${DIST}"
+	rm -rf ${DIST}
 
 build:
 	$(PYTHON) setup.py sdist
