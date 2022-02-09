@@ -1,16 +1,28 @@
 
-PIP := pip
-PYTHON := python
+PIP ?= pip
+PYTHON ?= python
+MAKE ?= make
+
 DIR := "${CURDIR}"
 DIST := "${CURDIR}/dist"
 DOCS_DIR = "${CURDIR}/docs"
+INDEX_HTML := "file://${DOCS_DIR}/build/html/index.html"
 
 .PHONY: clean build publish
 
-clean:
-	$(MAKE) -C ${DOCS_DIR} clean
+clean-build:
 	$(PYTHON) setup.py clean
 	rm -rf ${DIST}
+
+clean-docs:
+	$(MAKE) -C ${DOCS_DIR} clean
+
+clean: clean-build clean-docs
+
+docs: clean-docs
+	$(MAKE) -C ${DOCS_DIR} docs
+	@echo
+	@echo "View at ${INDEX_HTML}"
 
 build:
 	$(PYTHON) setup.py sdist
