@@ -66,6 +66,7 @@ setup(
         "matplotlib>=3.5.1",
         "sphinx-autodoc-typehints>=1.16.0",
         "numpydoc>=1.2",
+        "beautifulsoup4>=4.10.0",
     ],
     tests_require=[
         "pytest",
