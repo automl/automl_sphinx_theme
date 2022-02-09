@@ -42,7 +42,7 @@ class MyClass:
         self.d = d
 
     @property
-    def spaghetti_hoops(self) -> Dict[str, str]:
+    def spaghettihoops(self) -> Dict[str, str]:
         """Spaghetti hoops of this object
         Has as many entries as the parameter ``a`` given at construction. If ``c`` is
         True, the values will have "foo", otherwise "bar".

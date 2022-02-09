@@ -371,7 +371,9 @@ def _get_local_toctree_for(
     return result
 
 
-def index_toctree(app, pagename: str, startdepth: int, collapse: bool = False, **kwargs):
+def index_toctree(
+    app, pagename: str, startdepth: int, collapse: bool = False, **kwargs
+):
     """
     Returns the "local" (starting at `startdepth`) TOC tree containing the
     current page, rendered as HTML bullet lists.

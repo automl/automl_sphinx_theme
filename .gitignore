@@ -1,7 +1,10 @@
 .DS_Store
 *egg-info
 __pycache__
+*pycache*
 docs/api
 docs/examples
+docs/build
 docs/html
 *.pyc
+.mypy*

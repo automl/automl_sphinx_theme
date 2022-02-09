@@ -1,11 +1,14 @@
-import sys, os
+import os
 from automl_sphinx_theme.conf import OPTIONS
 from automl_sphinx_theme.translator import BootstrapHTML5Translator
-from automl_sphinx_theme.layout import update_config, setup_edit_url, add_toctree_functions, \
-    update_templates
+from automl_sphinx_theme.layout import (
+    update_config,
+    setup_edit_url,
+    add_toctree_functions,
+    update_templates,
+)
 
-__version__ = '1.0'
-
+__version__ = "0.1"
 
 
 def get_html_theme_path():
@@ -15,36 +18,36 @@ def get_html_theme_path():
 
 
 def set_options(module, src, custom_options={}):
-    OPTIONS["copyright"] = src.__copyright__
-    OPTIONS["author"] = src.__author__
-    OPTIONS["version"] = src.__version__
-    OPTIONS["release"] = src.__version__
-    OPTIONS["project"] = f"{src.__name__} Documentation"
-    OPTIONS["html_theme_path"] = get_html_theme_path(),
-    
+    OPTIONS["copyright"] = src.copyright
+    OPTIONS["author"] = src.author
+    OPTIONS["version"] = src.version
+    OPTIONS["release"] = src.version
+    OPTIONS["project"] = f"{src.name} Documentation"
+    OPTIONS["html_theme_path"] = (get_html_theme_path(),)
+
     for k, v in custom_options.items():
         if isinstance(v, dict):
             if k in OPTIONS:
                 OPTIONS[k].update(v)
                 continue
-        
+
         OPTIONS[k] = v
-    
+
     for k, v in OPTIONS.items():
         module[k] = v
-        
+
 
 def setup(app):
     theme_path = get_html_theme_path()
     app.add_html_theme("automl_sphinx_theme", theme_path)
-    
+
     # Read the Docs uses ``readthedocs`` as the name of the build, and also
     # uses a special "dirhtml" builder so we need to replace these both with
     # our custom HTML builder
     app.set_translator("html", BootstrapHTML5Translator)
     app.set_translator("readthedocs", BootstrapHTML5Translator, override=True)
     app.set_translator("readthedocsdirhtml", BootstrapHTML5Translator, override=True)
-    
+
     app.connect("env-updated", update_config)
     app.connect("html-page-context", setup_edit_url)
     app.connect("html-page-context", add_toctree_functions)
@@ -55,7 +58,4 @@ def setup(app):
     path_templates = os.path.join(pkg_dir, "templates")
     app.config.templates_path.append(path_templates)
 
-    return {
-        "parallel_read_safe": True,
-        "parallel_write_safe": True
-    }
+    return {"parallel_read_safe": True, "parallel_write_safe": True}

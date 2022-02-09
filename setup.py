@@ -1,8 +1,6 @@
-from io import open
 import os
-from os import path
+from io import open
 from automl_sphinx_theme import __version__
-
 from setuptools import setup
 
 

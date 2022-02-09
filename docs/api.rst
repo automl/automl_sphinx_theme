@@ -8,4 +8,3 @@ API References
    :recursive:
 
    src.file
-   src.package
