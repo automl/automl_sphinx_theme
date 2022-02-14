@@ -73,8 +73,11 @@ class MyClass:
         """A function that does something
         Here is a longer description which might give some more details or even
         an example
-        .. code-block:: python
+
+        .. code:: python
+
             result = myclass.some_function(42)
+
         Note
         ----
         Something you should defnitely pay attention to

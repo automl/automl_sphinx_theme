@@ -3,7 +3,7 @@ BUILDDIR = build
 SPHINXOPTS =
 ALLSPHINXOPTS = $(SPHINXOPTS) .
 
-.PHONY: clean buildapi html
+.PHONY: clean buildapi linkcheck html docs html-noexamples
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -25,3 +25,6 @@ html-noexamples:
 	SPHINX_GALLERY_PLOT=False $(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(SOURCEDIR) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+docs: html linkcheck
+

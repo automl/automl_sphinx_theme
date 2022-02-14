@@ -1,5 +1,10 @@
 import os
+import warnings
 from automl_sphinx_theme.conf import OPTIONS
+
+DEFAULT_THEME = {
+    "github_url": "https://automl.github.io/automl_sphinx_theme/main"
+}
 
 
 def get_html_theme_path():
@@ -8,21 +13,32 @@ def get_html_theme_path():
     return theme_path
 
 
-def set_options(module, src, custom_options={}):
-    OPTIONS["copyright"] = src.copyright
-    OPTIONS["author"] = src.author
-    OPTIONS["version"] = src.version
-    OPTIONS["release"] = src.version
-    OPTIONS["project"] = f"{src.name} Documentation"
-    OPTIONS["html_theme_path"] = (get_html_theme_path(),)
+def set_options(module, options=None):
 
-    for k, v in custom_options.items():
-        if isinstance(v, dict):
-            if k in OPTIONS:
+    if options is not None:
+        if "html_theme_options" not in options:
+            options["html_theme_options"] = DEFAULT_THEME
+
+        for k, v in options.items():
+            if isinstance(v, dict) and k in OPTIONS:
                 OPTIONS[k].update(v)
-                continue
+            else:
+                OPTIONS[k] = v
 
-        OPTIONS[k] = v
+    required_params = {"copyright", "author", "version", "name"}
+    missing = required_params - set(OPTIONS.keys())
+
+    if len(missing) > 0:
+        replace_str = "FIXME"
+        warnings.warn(
+            "automl_sphinx_theme.set_options(options={...}) is missing keys."
+            f" Using '{replace_str}' for options: \n\t{missing}."
+        )
+        OPTIONS.update({key: replace_str for key in missing})
+
+    OPTIONS["release"] = OPTIONS["version"]
+    OPTIONS["project"] = f"{OPTIONS['name']} Documentation"
+    OPTIONS["html_theme_path"] = (get_html_theme_path(),)
 
     for k, v in OPTIONS.items():
         module[k] = v

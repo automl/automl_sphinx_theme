@@ -1,18 +1,22 @@
-import sys, os
+import os
+import sys
 
-sys.path.insert(0, os.path.abspath("../"))
+sys.path.insert(0, os.path.abspath(".."))
 sys.path.insert(0, os.path.abspath("../src"))
 
-import src
-import automl_sphinx_theme
+import automl_sphinx_theme  # Must come after the path injection above
+from src import copyright, author, version, name
 
 
-CUSTOM_OPTIONS = {
+options = {
+    "copyright": copyright,
+    "author": author,
+    "version": version,
+    "name": name,
     "html_theme_options": {
         "github_url": "https://automl.github.io/automl_sphinx_theme/main"
     }
 }
 
-
 # Import conf.py from the automl theme
-automl_sphinx_theme.set_options(globals(), src, CUSTOM_OPTIONS)
+automl_sphinx_theme.set_options(globals(), options)
