@@ -52,6 +52,7 @@ setup(
             "theme.conf",
             "*.html",
             *package_files("automl_sphinx_theme/static"),
+            *package_files("automl_sphinx_theme/templates"),
         ]
     },
     entry_points={
