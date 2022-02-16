@@ -1,3 +1,7 @@
+import os
+import automl_sphinx_theme
+
+
 OPTIONS = {
     "extensions": [
         "sphinx.ext.autodoc",
@@ -41,7 +45,10 @@ OPTIONS = {
     # "napoleon_attr_annotations": True,
     "autosectionlabel_maxdepth": 1,
     # Add any paths that contain templates here, relative to this directory.
-    "templates_path": ["templates"],
+    "templates_path": [
+        "templates",
+        os.path.join(str(automl_sphinx_theme.__path__), "templates"),
+    ],
     # The suffix(es) of source filenames.
     # You can specify multiple suffix as a list of string:
     # source_suffix": ['.rst', '.md']

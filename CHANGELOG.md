@@ -1,3 +1,8 @@
+# Version 0.1.4
+
+- Added template path from distribution.
+
+
 # Version 0.1.3
 
 - Templates are included in dist now.
