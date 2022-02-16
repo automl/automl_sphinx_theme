@@ -2,9 +2,7 @@ import os
 import warnings
 from automl_sphinx_theme.conf import OPTIONS
 
-DEFAULT_THEME = {
-    "github_url": "https://automl.github.io/automl_sphinx_theme/main"
-}
+DEFAULT_THEME = {"github_url": "https://automl.github.io/automl_sphinx_theme/main"}
 
 
 def get_html_theme_path():
@@ -38,7 +36,7 @@ def set_options(module, options=None):
 
     OPTIONS["release"] = OPTIONS["version"]
     OPTIONS["project"] = f"{OPTIONS['name']} Documentation"
-    OPTIONS["html_theme_path"] = (get_html_theme_path(),)
+    OPTIONS["html_theme_path"] = [get_html_theme_path()]
 
     for k, v in OPTIONS.items():
         module[k] = v
