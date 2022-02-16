@@ -1,3 +1,8 @@
+# Version 0.1.5
+
+- Forgot to change the version number.
+
+
 # Version 0.1.4
 
 - Added template path from distribution.
