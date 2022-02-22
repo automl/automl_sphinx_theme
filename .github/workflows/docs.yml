@@ -1,7 +1,6 @@
 name: docs
 
 on:
-
   # Trigger manually
   workflow_dispatch:
 
@@ -15,12 +14,7 @@ on:
     branches:
       - main
 
-env:
-
-  name: "automl_sphinx_theme"
-
 jobs:
-
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
@@ -45,7 +39,7 @@ jobs:
       if: (contains(github.ref, 'main'))
       run: |
         cd ..
-        git clone https://github.com/automl/${{ env.name }}.git --branch gh-pages --single-branch gh-pages
+        git clone https://github.com/${{ github.repository }}.git --branch gh-pages --single-branch gh-pages
 
     - name: Copy new docs into gh-pages
       if: (contains(github.ref, 'development') || contains(github.ref, 'main'))

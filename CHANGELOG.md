@@ -1,3 +1,11 @@
+# Version 0.1.7
+
+- Removed logo and favicon.
+- Added better README.md.
+- Changed workflow to work with any organization.
+- Removed twitter icon on default.
+
+
 # Version 0.1.6
 
 - Disable memory warning.

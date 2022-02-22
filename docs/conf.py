@@ -13,6 +13,7 @@ options = {
     "name": name,
     "html_theme_options": {
         "github_url": "https://automl.github.io/automl_sphinx_theme/main"
+        # "twitter_url": "https://twitter.com"
     },
 }
 
