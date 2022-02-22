@@ -1,0 +1,12 @@
+
+:orphan:
+
+.. _sphx_glr_examples_test_sg_execution_times:
+
+Computation times
+=================
+**00:00.001** total execution time for **examples_test** files:
+
++-------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_examples_test_plot_hello_world3.py` (``plot_hello_world3.py``) | 00:00.001 | 0.0 MB |
++-------------------------------------------------------------------------------+-----------+--------+
