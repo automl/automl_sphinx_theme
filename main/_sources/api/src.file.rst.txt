@@ -2,30 +2,28 @@
 ========
 
 .. automodule:: src.file
-  
+
    
-      
+   
    
 
    
-      
+   
    
 
    
-      
-      .. rubric:: Classes
+   
+   .. rubric:: Classes
 
-      .. autosummary::
-         :toctree:
-         :template: custom-template.rst
-      
-         MyClass
-      
+   .. autosummary::
+   
+      MyClass
+   
    
 
    
-      
+   
    
 
 
-   
+

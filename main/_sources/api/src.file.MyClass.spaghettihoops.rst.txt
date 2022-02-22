@@ -1,6 +1,0 @@
-src.file.MyClass.spaghettihoops
-===============================
-
-.. currentmodule:: src.file
-
-.. autoproperty:: MyClass.spaghettihoops
