@@ -1,6 +1,14 @@
 
 # AutoML Sphinx Theme
 
+The goal of this repository is to set up a documentation as fast and as clean as possible. In your
+source project you only need to install `automl_sphinx_theme` to get all the features you need.
+Those include automatic API generation, beautiful theme, numpy docstring interpretation, and
+executing/plotting examples. 
+*Therefore, NO COMPLICATED `.conf` or sphinx knowledge are necessary!*
+
+:sparkling_heart: You're welcome. :sparkling_heart:
+
 
 ## Installation
 
