@@ -2,6 +2,8 @@
 
 - Disable memory warning.
 - No errors generating docs anymore.
+- Added more examples and source files.
+- Changed example appearance.
 
 
 # Version 0.1.5
