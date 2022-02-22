@@ -7,3 +7,5 @@ API References
    :recursive:
 
    src.file
+   src.another_file
+   src.subfolder
