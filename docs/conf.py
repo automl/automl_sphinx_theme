@@ -12,8 +12,8 @@ options = {
     "version": version,
     "name": name,
     "html_theme_options": {
-        "github_url": "https://automl.github.io/automl_sphinx_theme/main"
-        # "twitter_url": "https://twitter.com"
+        "github_url": "https://github.com/automl/automl_sphinx_theme",
+        "twitter_url": "https://twitter.com/automl_org?lang=de",
     },
 }
 
