@@ -75,9 +75,9 @@ OPTIONS = {
         # path to the examples
         "examples_dirs": "../examples",
         "gallery_dirs": "examples",
-        "show_signature": "False",
-        "show_memory": "False",
-        "plot_gallery": "True",
+        "show_signature": False,
+        "show_memory": False,
+        "plot_gallery": True,
         "ignore_pattern": ".*pcs$|__init__\\.py$",
     },
 }
