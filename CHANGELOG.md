@@ -1,3 +1,9 @@
+# Version 0.1.6
+
+- Disable memory warning.
+- No errors generating docs anymore.
+
+
 # Version 0.1.5
 
 - Forgot to change the version number.
