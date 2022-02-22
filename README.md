@@ -6,7 +6,7 @@ source project you only need to install `automl_sphinx_theme` to get all the fea
 Those include automatic API generation, beautiful theme, numpy docstring interpretation, and
 executing/plotting examples.
 
-*Therefore, NO COMPLICATED `.conf` or sphinx knowledge are necessary!*<br />
+<b>NO COMPLICATED `.conf` OR SPHINX KNOWLEDGE ARE NECESSARY!</b><br />
 :sparkling_heart: You're welcome. :sparkling_heart:
 
 
