@@ -1,0 +1,35 @@
+﻿src.another\_file
+=================
+
+.. automodule:: src.another_file
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      somefunction
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      A
+   
+   
+
+   
+   
+   
+
+
+
