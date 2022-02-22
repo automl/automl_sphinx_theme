@@ -1,3 +1,9 @@
+# Version 0.1.8
+
+- Added license.
+- Changed urls.
+
+
 # Version 0.1.7
 
 - Removed logo and favicon.
