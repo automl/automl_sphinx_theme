@@ -42,6 +42,18 @@
     padding-left: 15px;
 }}
 
+.bd-sidebar {
+    margin-top: 0;
+}
+
+nav#bd-docs-nav a.internal {
+    padding: 5px 15px !important;
+}
+
+nav#bd-docs-nav ul ul {
+    padding-left: 15px;
+}
+
 
 p.sphx-glr-signature, p.sphx-glr-timing, .sphx-glr-download, .sphx-glr-download-link-note {
     display: none;
