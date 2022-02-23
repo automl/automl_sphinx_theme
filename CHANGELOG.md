@@ -2,6 +2,7 @@
 
 - Added license.
 - Changed urls.
+- Improved navigation style.
 
 
 # Version 0.1.7
