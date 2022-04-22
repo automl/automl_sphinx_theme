@@ -1,3 +1,8 @@
+# Version 0.1.9
+
+- Added python 3.7 support.
+
+
 # Version 0.1.8
 
 - Added license.
