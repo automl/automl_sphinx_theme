@@ -1,3 +1,8 @@
+# Version 0.1.4
+
+- Added permission to write to branches.
+
+
 # Version 0.1.3
 
 - Templates are included in dist now.
