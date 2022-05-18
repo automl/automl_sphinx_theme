@@ -1,0 +1,29 @@
+﻿src.file
+========
+
+.. automodule:: src.file
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      MyClass
+   
+   
+
+   
+   
+   
+
+
+

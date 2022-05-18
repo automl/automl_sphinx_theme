@@ -1,0 +1,29 @@
+src.subfolder.something\_else
+=============================
+
+.. automodule:: src.subfolder.something_else
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      double
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

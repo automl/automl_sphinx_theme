@@ -1,0 +1,31 @@
+﻿src.subfolder
+=============
+
+.. automodule:: src.subfolder
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   src.subfolder.something_else
+
