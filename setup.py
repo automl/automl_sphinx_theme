@@ -21,9 +21,8 @@ def package_files(directory: str):
     paths: list
         List of file paths.
     """
-
     paths = []
-    for (path, directories, filenames) in os.walk(directory):
+    for (path, _, filenames) in os.walk(directory):
         for filename in filenames:
             paths.append(os.path.join("..", path, filename))
 
@@ -60,15 +59,16 @@ setup(
             "automl_sphinx_theme = automl_sphinx_theme",
         ]
     },
-    python_requires=">=3.8",
+    python_requires=">=3.7",
     install_requires=[
         "sphinx>=4.4.0",
         "sphinx-gallery>=0.10.1",
-        "sphinx-toolbox>=2.17.0" "sphinx-autodoc-typehints>=1.16.0",
+        "sphinx-toolbox>=2.17.0",
+        "sphinx-autodoc-typehints",
         "numpydoc>=1.2",
         "beautifulsoup4>=4.10.0",
         "jupyter==1.0.0",
-        "notebook>=6.48",
+        "notebook",
         "matplotlib>=3.5.1",
         "seaborn>=0.11.2",
         "myst-parser",
@@ -80,6 +80,7 @@ setup(
         "dev": [],
     },
     classifiers=[
+        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",

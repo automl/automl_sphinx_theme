@@ -4,7 +4,8 @@ API References
 
 .. autosummary::
    :toctree: api
-   :template: custom-module.rst
    :recursive:
 
    src.file
+   src.another_file
+   src.subfolder

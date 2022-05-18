@@ -81,14 +81,17 @@ class MyClass:
         Note
         ----
         Something you should defnitely pay attention to
+
         Parameters
         ----------
         x : int
             Some description about x
+
         Returns
         -------
         int
             The sum of x and a
+
         Raises
         ------
         ValueError

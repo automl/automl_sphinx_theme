@@ -42,6 +42,18 @@
     padding-left: 15px;
 }}
 
+.bd-sidebar {
+    margin-top: 0;
+}
+
+nav#bd-docs-nav a.internal {
+    padding: 5px 15px !important;
+}
+
+nav#bd-docs-nav ul ul {
+    padding-left: 15px;
+}
+
 
 p.sphx-glr-signature, p.sphx-glr-timing, .sphx-glr-download, .sphx-glr-download-link-note {
     display: none;
@@ -99,21 +111,15 @@ p.sphx-glr-signature, p.sphx-glr-timing, .sphx-glr-download, .sphx-glr-download-
 
 .sphx-glr-thumbcontainer a.internal {
     position: relative !important;
-    padding: 30px 15px !important;
-    background-color: rgb(128, 128, 128) !important;
-    color: white !important;
+    padding: .75rem !important;
     border: 0 !important;
-    vertical-align: middle;
-    border-radius: 5px;
+    border-bottom: 1px solid rgba(220, 220, 220, 1.0) !important;
+    text-align: left;
 }
 
 .sphx-glr-thumbcontainer a.internal:hover {
-    background-color: rgb(60, 60, 60) !important;
-    border: 0 !important;
-
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
-
     text-decoration: none;
 }
 
@@ -136,6 +142,9 @@ dt:target, span.highlighted {
     background-color: #ffff0020;
 }
 
+.section {
+    margin-bottom: 1.5rem;
+}
 
 
 /* API DOC */

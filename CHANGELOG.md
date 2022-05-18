@@ -1,6 +1,44 @@
+# Version 0.1.10
+- Added permission to write to branches.
+- Added Markdown support
+
+
+# Version 0.1.9
+
+- Added python 3.7 support.
+
+
+# Version 0.1.8
+
+- Added license.
+- Changed urls.
+- Improved navigation style.
+
+
+# Version 0.1.7
+
+- Removed logo and favicon.
+- Added better README.md.
+- Changed workflow to work with any organization.
+- Removed twitter icon on default.
+
+
+# Version 0.1.6
+
+- Disable memory warning.
+- No errors generating docs anymore.
+- Added more examples and source files.
+- Changed example appearance.
+
+
+# Version 0.1.5
+
+- Forgot to change the version number.
+
+
 # Version 0.1.4
 
-- Added permission to write to branches.
+- Added template path from distribution.
 
 
 # Version 0.1.3
