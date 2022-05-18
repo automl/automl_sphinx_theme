@@ -71,6 +71,7 @@ setup(
         "notebook>=6.48",
         "matplotlib>=3.5.1",
         "seaborn>=0.11.2",
+        "myst-parser",
     ],
     tests_require=[
         "pytest",
