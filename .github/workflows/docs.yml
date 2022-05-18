@@ -32,33 +32,33 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
-        python-version: "3.7"
+        python-version: "3.9"
 
     - name: Install dependencies
       run: |
-        pip install .
+        pip install ".[dev]"
 
     - name: Make docs
       run: |
-        cd docs
-        make html
+        make clean
+        make docs
 
     - name: Pull latest gh-pages
-      if: (contains(github.ref, 'main'))
+      if: (contains(github.ref, 'develop') || contains(github.ref, 'main')) && github.event_name == 'push'
       run: |
         cd ..
         git clone https://github.com/${{ github.repository }}.git --branch gh-pages --single-branch gh-pages
 
     - name: Copy new docs into gh-pages
-      if: (contains(github.ref, 'development') || contains(github.ref, 'main'))
+      if: (contains(github.ref, 'develop') || contains(github.ref, 'main')) && github.event_name == 'push'
       run: |
         branch_name=${GITHUB_REF##*/}
         cd ../gh-pages
         rm -rf $branch_name
         cp -r ../${{ env.name }}/docs/build/html $branch_name
-
+        
     - name: Push to gh-pages
-      if: (contains(github.ref, 'main'))
+      if: (contains(github.ref, 'develop') || contains(github.ref, 'main')) && github.event_name == 'push'
       run: |
         last_commit=$(git log --pretty=format:"%an: %s")
         cd ../gh-pages
