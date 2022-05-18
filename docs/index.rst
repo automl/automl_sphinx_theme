@@ -10,6 +10,7 @@ Home
    basic_usage/index
    advanced_usage/index
    commands
+   markdown_example
    api
    glossary
    faq
