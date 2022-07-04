@@ -24,7 +24,7 @@ OPTIONS = {
         # "sphinx_gallery.gen_gallery",
         # "sphinx.ext.autosectionlabel",
         # "sphinx.ext.autodoc",
-        # "sphinx.ext.doctest",
+        "sphinx.ext.doctest",
     ],
     "suppress_warnings": [
         "autosectionlabel.*",
