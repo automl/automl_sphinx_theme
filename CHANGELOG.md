@@ -1,6 +1,12 @@
+# Version 0.1.11
+- Added AutoML logo.
+- Make title clickable.
+- Added doctest as extension.
+
+
 # Version 0.1.10
 - Added permission to write to branches.
-- Added Markdown support
+- Added Markdown support.
 
 
 # Version 0.1.9
