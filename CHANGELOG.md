@@ -1,3 +1,9 @@
+# Version 0.1.12
+- Changed language to "en".
+- Sphinx is rendered using Python 3.10 now.
+- With Sphinx 5.x, the examples are back to grids. Examples were adapted so they work and look good using the new version.
+
+
 # Version 0.1.11
 - Added AutoML logo.
 - Make title clickable.
