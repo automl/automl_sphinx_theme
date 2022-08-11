@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:00.004** total execution time for **examples** files:
+**00:00.003** total execution time for **examples** files:
 
 +--------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_plot_hello_world.py` (``plot_hello_world.py``)   | 00:00.003 | 0.0 MB |
+| :ref:`sphx_glr_examples_plot_hello_world2.py` (``plot_hello_world2.py``) | 00:00.002 | 0.0 MB |
 +--------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_plot_hello_world2.py` (``plot_hello_world2.py``) | 00:00.001 | 0.0 MB |
+| :ref:`sphx_glr_examples_plot_hello_world.py` (``plot_hello_world.py``)   | 00:00.001 | 0.0 MB |
 +--------------------------------------------------------------------------+-----------+--------+
