@@ -9,7 +9,13 @@
 
    
    
-   .. rubric:: Functions
+   
+
+   
+   
+
+   Functions
+   ^^^^^^^^^
 
    .. autosummary::
    
@@ -19,7 +25,9 @@
 
    
    
-   .. rubric:: Classes
+   
+   Classes
+   ^^^^^^^
 
    .. autosummary::
    
@@ -31,5 +39,8 @@
    
    
 
-
+   
+   Interfaces
+   ^^^^^^^^^^
+   
 

@@ -5,6 +5,17 @@
 
    
    
+
+   Modules
+   ^^^^^^^
+
+   .. autosummary::
+      :template: module.rst
+      :toctree:
+      :recursive:
+   
+      src.subfolder.something_else
+   
    
 
    
@@ -19,13 +30,12 @@
    
    
 
+   
+   
+   
 
-
-.. rubric:: Modules
-
-.. autosummary::
-   :toctree:
-   :recursive:
-
-   src.subfolder.something_else
+   
+   Interfaces
+   ^^^^^^^^^^
+   
 
