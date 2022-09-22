@@ -13,7 +13,13 @@
 
    
    
-   .. rubric:: Classes
+   
+
+   
+   
+   
+   Classes
+   ^^^^^^^
 
    .. autosummary::
    
@@ -25,5 +31,8 @@
    
    
 
-
+   
+   Interfaces
+   ^^^^^^^^^^
+   
 

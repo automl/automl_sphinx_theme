@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>src.subfolder &#8212; AutoMLTemplate Documentation 0.0.1 documentation</title>
     
@@ -143,10 +143,22 @@ style="width: 100%;">
      Hello World
     </a>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../examples/test/index.html">
      Examples2
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../examples/test/plot_hello_world3.html">
+       Hello World3
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -154,8 +166,8 @@ style="width: 100%;">
   <a class="reference internal" href="../basic_usage/index.html">
    Basic Usage
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -166,8 +178,8 @@ style="width: 100%;">
   <a class="reference internal" href="../advanced_usage/index.html">
    Advanced Usage
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -188,8 +200,8 @@ style="width: 100%;">
   <a class="reference internal" href="../api.html">
    API References
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -204,10 +216,22 @@ style="width: 100%;">
      src.another_file
     </a>
    </li>
-   <li class="toctree-l2 current active">
+   <li class="toctree-l2 current active has-children">
     <a class="current reference internal" href="#">
      src.subfolder
     </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="src.subfolder.something_else.html">
+       src.subfolder.something_else
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -235,9 +259,24 @@ style="width: 100%;">
               
               <div class="toc-item">
                 
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
-    
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modules">
+   Modules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interfaces">
+   Interfaces
+  </a>
+ </li>
+</ul>
+
 </nav>
               </div>
               
@@ -260,35 +299,36 @@ style="width: 100%;">
   <section id="module-src.subfolder">
 <span id="src-subfolder"></span><h1>src.subfolder<a class="headerlink" href="#module-src.subfolder" title="Permalink to this heading">¶</a></h1>
 <p>Should there be docstrings in here</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="src.subfolder.double">
-<span class="sig-prename descclassname"><span class="pre">src.subfolder.</span></span><span class="sig-name descname"><span class="pre">double</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/src/subfolder/something_else.html#double"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.subfolder.double" title="Permalink to this definition">¶</a></dt>
-<dd><p>Incase you don’t know how to multiply</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>a</strong> (<em>int</em>) – some number</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>the number doubled, cool</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-</dd></dl>
-
-<p class="rubric">Modules</p>
+<section id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this heading">¶</a></h2>
 <table class="autosummary longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="src.subfolder.something_else.html#module-src.subfolder.something_else" title="src.subfolder.something_else"><code class="xref py py-obj docutils literal notranslate"><span class="pre">src.subfolder.something_else</span></code></a></p></td>
 <td><p>Hello</p></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="interfaces">
+<h2>Interfaces<a class="headerlink" href="#interfaces" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.subfolder.double">
+<span class="sig-prename descclassname"><span class="pre">src.subfolder.</span></span><span class="sig-name descname"><span class="pre">double</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/src/subfolder/something_else.html#double"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.subfolder.double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Incase you don’t know how to multiply</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>a</strong> (<em>int</em>) – some number</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the number doubled, cool</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 </section>
 
 

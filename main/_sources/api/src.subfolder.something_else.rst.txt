@@ -9,7 +9,13 @@ src.subfolder.something\_else
 
    
    
-   .. rubric:: Functions
+   
+
+   
+   
+
+   Functions
+   ^^^^^^^^^
 
    .. autosummary::
    
@@ -25,5 +31,8 @@ src.subfolder.something\_else
    
    
 
-
+   
+   Interfaces
+   ^^^^^^^^^^
+   
 
