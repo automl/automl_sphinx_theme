@@ -1,3 +1,7 @@
+# Version 0.1.13
+- Increased navigation depth by 1
+
+
 # Version 0.1.12
 - Changed language to "en".
 - Sphinx is rendered using Python 3.10 now.
