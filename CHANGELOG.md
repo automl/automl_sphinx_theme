@@ -1,5 +1,6 @@
 # Version 0.1.13
-- Increased navigation depth by 1
+- Increased navigation depth by 1.
+- Added custom module template.
 
 
 # Version 0.1.12
