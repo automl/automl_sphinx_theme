@@ -5,21 +5,6 @@
 
    
    
-
-   Modules
-   ^^^^^^^
-
-   .. autosummary::
-      :template: module.rst
-      :toctree:
-      :recursive:
-   
-      src.subfolder.something_else
-   
-   
-
-   
-   
    
 
    
@@ -38,4 +23,18 @@
    Interfaces
    ^^^^^^^^^^
    
+
+
+
+
+
+Modules
+^^^^^^^
+
+.. autosummary::
+   :template: module.rst
+   :toctree:
+   :recursive:
+
+   src.subfolder.something_else
 
