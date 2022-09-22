@@ -1,3 +1,8 @@
+# Version 0.1.14
+- Increased navigation depth by 1 again.
+- Shifted modules to bottom again.
+
+
 # Version 0.1.13
 - Increased navigation depth by 1.
 - Added custom module template.

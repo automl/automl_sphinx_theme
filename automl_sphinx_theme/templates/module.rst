@@ -2,22 +2,6 @@
 
 .. automodule:: {{ fullname }}
 
-   {% block modules %}
-   {% if modules %}
-
-   Modules
-   ^^^^^^^
-
-   .. autosummary::
-      :template: module.rst
-      :toctree:
-      :recursive:
-   {% for item in modules %}
-      {{ item }}
-   {%- endfor %}
-   {% endif %}
-   {% endblock %}
-
    {% block attributes %}
    {% if attributes %}
 
@@ -76,3 +60,18 @@
    {% endblock %}
 
 
+{% block modules %}
+{% if modules %}
+
+Modules
+^^^^^^^
+
+.. autosummary::
+   :template: module.rst
+   :toctree:
+   :recursive:
+{% for item in modules %}
+   {{ item }}
+{%- endfor %}
+{% endif %}
+{% endblock %}
