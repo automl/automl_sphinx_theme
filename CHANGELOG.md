@@ -1,3 +1,7 @@
+# Version 0.1.15
+- Removed base github url.
+
+
 # Version 0.1.14
 - Increased navigation depth by 1 again.
 - Shifted modules to bottom again.
