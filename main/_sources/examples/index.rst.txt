@@ -20,23 +20,6 @@ Examples
 
 .. only:: html
 
-  .. image:: /examples/images/thumb/sphx_glr_plot_hello_world2_thumb.png
-    :alt: Hello World2
-
-  :ref:`sphx_glr_examples_plot_hello_world2.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Hello World2</div>
-    </div>
-
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="    This page is under construction.">
-
-.. only:: html
-
   .. image:: /examples/images/thumb/sphx_glr_plot_hello_world_thumb.png
     :alt: Hello World
 
@@ -50,14 +33,31 @@ Examples
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="    This page is under construction.">
+
+.. only:: html
+
+  .. image:: /examples/images/thumb/sphx_glr_plot_hello_world2_thumb.png
+    :alt: Hello World2
+
+  :ref:`sphx_glr_examples_plot_hello_world2.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Hello World2</div>
+    </div>
+
+
+.. raw:: html
+
     </div>
 
 
 .. toctree::
    :hidden:
 
-   /examples/plot_hello_world2
    /examples/plot_hello_world
+   /examples/plot_hello_world2
 
 Examples2
 ~~~~~~~~~
