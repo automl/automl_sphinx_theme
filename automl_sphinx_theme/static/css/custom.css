@@ -84,6 +84,7 @@ p.sphx-glr-timing,
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
     border: 1px solid rgba(220, 220, 220, 1.0) !important;
+    text-align: center;
 }
 
 .sphx-glr-thumbcontainer:hover {
@@ -179,7 +180,6 @@ table.table {
     white-space: nowrap;
 }
 
-
 /* API DOC */
 
 p.rubric {
@@ -189,7 +189,7 @@ p.rubric {
 }
 
 table.autosummary {
-    margin-top: -1rem;
+    display: table !important;
 }
 
 table.autosummary td,

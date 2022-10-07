@@ -1,3 +1,9 @@
+# Version 0.1.17
+- Example text is centered now.
+- Autosummary tables full-width.
+
+
+
 # Version 0.1.16
 - Make tables horizontal scrollable.
 
