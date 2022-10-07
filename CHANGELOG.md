@@ -1,7 +1,11 @@
+# Version 0.1.18
+- Long headings break now.
+- Autosummary tables break now.
+
+
 # Version 0.1.17
 - Example text is centered now.
 - Autosummary tables full-width.
-
 
 
 # Version 0.1.16

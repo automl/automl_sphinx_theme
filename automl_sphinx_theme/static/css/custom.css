@@ -1,3 +1,11 @@
+h1,
+h2,
+h3,
+h4 {
+    overflow-wrap: break-word !important;
+}
+
+
 .bd-search {
     margin: 0;
     padding-left: 0;
@@ -190,6 +198,7 @@ p.rubric {
 
 table.autosummary {
     display: table !important;
+    white-space: normal !important;
 }
 
 table.autosummary td,
