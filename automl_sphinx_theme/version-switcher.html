@@ -1,0 +1,12 @@
+<div class="dropdown mt-1">
+    <button type="button" class="btn btn-secondary btn-md navbar-btn dropdown-toggle" id="dLabelMore"
+        data-toggle="dropdown">
+        v{{ release }}
+        <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu list-group-flush py-0" aria-labelledby="dLabelMore">
+        {%- for label, html in get_versions().items() %}
+        <a class="list-group-item list-group-item-action" href="{{ html }}">{{ label }}</a>
+        {%- endfor %}
+    </div>
+</div>

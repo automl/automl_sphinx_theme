@@ -36,6 +36,11 @@ Follow the steps to enable it:
 - Go to `settings > pages` and select `gh-pages` as source.
 
 
+## Version Switching
+
+AutoML Sphinx Theme provides the user to link older versions of documentations (must be done manually!). Specify ``versions`` in the options to enable it. We recommend setting up a Github workflow which automatically pushes the latest tag to the gh-pages. From there, you could link the version directly.
+
+
 ## Customization
 
 - Logo: Add docs/images/logo.png.

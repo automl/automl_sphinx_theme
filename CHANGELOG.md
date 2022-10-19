@@ -1,3 +1,8 @@
+# Version 0.2
+- Added version switching.
+- Navigation looking good on mobile devices now.
+
+
 # Version 0.1.18
 - Long headings break now.
 - Autosummary tables break now.

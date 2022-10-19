@@ -21,6 +21,7 @@ def update_config(app, env):
                 "Use `search-field.html` in `navbar_end` template list instead."
             )
         )
+
     if not isinstance(theme_options.get("icon_links", []), list):
         raise ExtensionError(
             (
@@ -463,6 +464,7 @@ def soup_to_python(soup, only_pages=False):
     navs = []
     for ul in soup.find_all("ul", recursive=False):
         extract_level_recursive(ul, navs)
+
     return navs
 
 
@@ -524,3 +526,10 @@ def setup_edit_url(app, pagename, templatename, context, doctree):
 
     # Ensure that the max TOC level is an integer
     context["theme_show_toc_level"] = int(context.get("theme_show_toc_level", 1))
+
+
+def setup_versions(app, pagename, templatename, context, doctree):
+    def get_versions():
+        return app.config.__dict__["_raw_config"]["versions"]
+
+    context["get_versions"] = get_versions

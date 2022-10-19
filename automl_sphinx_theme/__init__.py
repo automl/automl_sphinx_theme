@@ -2,6 +2,7 @@ import os
 import warnings
 from automl_sphinx_theme.conf import OPTIONS
 
+
 DEFAULT_THEME = {"github_url": "https://automl.github.io/automl_sphinx_theme/main"}
 
 
@@ -12,7 +13,7 @@ def get_html_theme_path():
 
 
 def set_options(module, options=None):
-
+    """Sets options to the module."""
     if options is not None:
         if "html_theme_options" not in options:
             options["html_theme_options"] = DEFAULT_THEME
@@ -38,6 +39,9 @@ def set_options(module, options=None):
     OPTIONS["project"] = f"{OPTIONS['name']} Documentation"
     OPTIONS["html_theme_path"] = [get_html_theme_path()]
 
+    if "versions" not in OPTIONS:
+        OPTIONS["versions"] = {f"v{OPTIONS['version']}": "#"}
+
     for k, v in OPTIONS.items():
         module[k] = v
 
@@ -60,9 +64,11 @@ def setup(app):
         setup_edit_url,
         add_toctree_functions,
         update_templates,
+        setup_versions,
     )
 
     app.connect("env-updated", update_config)
+    app.connect("html-page-context", setup_versions)
     app.connect("html-page-context", setup_edit_url)
     app.connect("html-page-context", add_toctree_functions)
     app.connect("html-page-context", update_templates)

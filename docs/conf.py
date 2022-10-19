@@ -10,6 +10,10 @@ options = {
     "copyright": copyright,
     "author": author,
     "version": version,
+    "versions": {
+        f"v{version} (stable)": "#",
+        "Your custom version here": "#",
+    },
     "name": name,
     "html_theme_options": {
         "github_url": "https://github.com/automl/automl_sphinx_theme",
