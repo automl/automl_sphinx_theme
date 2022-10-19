@@ -41,7 +41,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Hello World3" href="plot_hello_world3.html" />
-    <link rel="prev" title="Hello World2" href="../plot_hello_world2.html" />
+    <link rel="prev" title="Hello World" href="../plot_hello_world.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -96,12 +96,25 @@
       </div>
       
       <div class="navbar-end-item">
-        <form class="bd-search align-items-center" action="../../search.html" method="get"
-style="width: 100%;">
+        <div class="dropdown mt-1">
+    <button type="button" class="btn btn-secondary btn-md navbar-btn dropdown-toggle" id="dLabelMore"
+        data-toggle="dropdown">
+        v0.0.1
+        <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu list-group-flush py-0" aria-labelledby="dLabelMore">
+        <a class="list-group-item list-group-item-action" href="#">v0.0.1 (stable)</a>
+        <a class="list-group-item list-group-item-action" href="#">Your custom version here</a>
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <form class="bd-search align-items-center" action="../../search.html" method="get" style="width: 100%;">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+  <input type="search" class="form-control btn btn-md" name="q" id="search-input"
+    placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off">
 </form>
-
       </div>
       
     </div>
@@ -135,13 +148,13 @@ style="width: 100%;">
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../plot_hello_world.html">
-     Hello World
+    <a class="reference internal" href="../plot_hello_world2.html">
+     Hello World2
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../plot_hello_world2.html">
-     Hello World2
+    <a class="reference internal" href="../plot_hello_world.html">
+     Hello World
     </a>
    </li>
    <li class="toctree-l2 current active has-children">
@@ -298,11 +311,11 @@ style="width: 100%;">
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../plot_hello_world2.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../plot_hello_world.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Hello World2</p>
+            <p class="prev-next-title">Hello World</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="plot_hello_world3.html" title="next page">
@@ -333,7 +346,7 @@ style="width: 100%;">
     <div class="footer-item">
       <p class="sphinx-version">
 Created using <a href="http://sphinx-doc.org/">Sphinx</a>
-5.2.3. Template is modified version of <a
+5.3.0. Template is modified version of <a
 href="https://pydata-sphinx-theme.readthedocs.io">PyData Sphinx Theme</a>. <br>
 </p>
     </div>
